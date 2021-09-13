@@ -1,13 +1,6 @@
 import time
 from selenium import webdriver
 
-# def test_answer(driverName):
-#     if driverName == "type1":
-#         print("first")
-#     elif driverName == "type2":
-#         print("second")
-#     assert 0  # to see what was printed
-
 def test_toolsqa(driverName):
     if driverName == "chrome":
         driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
@@ -28,4 +21,3 @@ def test_toolsqa(driverName):
     time.sleep(2)
     submit_text = driver.find_element_by_xpath("//div[@id='example-modal-sizes-title-lg']").text
     assert submit_text == "Thanks for submitting the form"
-
