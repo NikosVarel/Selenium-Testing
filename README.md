@@ -12,6 +12,14 @@ The main taget is:
   * deliver a **error-warning** level report.
 
 
+**TEST ARCHITECTURE**
+
+  * The **driver** pytest requests included in **conftest.py** file<br/>
+  * All tests are included in **tests** package.<br/>
+  * A **BaseClass** class place in order driver call and test plans, in BaseClass package.<br/>
+  * Αfter the plan is ready, we call BaseClass in **test_main**. **!!!** In test_main we can call and another test plans if we want with other requests.<br/>
+  * test_main is ready to be executed as pytest.
+
 
 
 
