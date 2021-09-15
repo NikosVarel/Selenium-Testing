@@ -1,10 +1,8 @@
-import time
-import pytest
+from utilities.BaseClass import BaseClass
 
-@pytest.mark.usefixtures("setup")
-class TestToolsQA:
+class TestToolsQA(BaseClass):
 
-    def test_toolsqaform(self,setup):
+    def test_toolsqaform(self):
 
         self.driver.get("https://demoqa.com/automation-practice-form")
         self.driver.maximize_window()
@@ -16,13 +14,12 @@ class TestToolsQA:
         self.driver.find_element_by_xpath("//input[@id='userNumber']").send_keys("6912345678")
         self.driver.execute_script("window.scrollBy(0,1000)")
         self.driver.find_element_by_xpath("//*[@id='submit']").click()
-        time.sleep(2)
         submit_text = self.driver.find_element_by_xpath("//div[@id='example-modal-sizes-title-lg']").text
         self.driver.get_screenshot_as_file("Sheets/ToolsQA_form.png")
         assert submit_text == "Thanks for submitting the form"
 
 
-    def test_toolsqabooks(self,setup):
+    def test_toolsqabooks(self):
 
         self.driver.get("https://demoqa.com/login")
         self.driver.maximize_window()
