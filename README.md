@@ -20,4 +20,4 @@ The main taget is:
   * Αfter the plan is ready, we call BaseClass in **test_main**. **!!!** In test_main we can call and another test plans if we want with other requests.<br/>
   * test_main is ready to be executed as pytest.
 
-<!-- hh -->
+<!-- Diagram editor -->
