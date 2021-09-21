@@ -1,11 +1,8 @@
-import logging
-import pytest
 
-from tests.test_toolsqabooks import UnitTestBooks
+import pytest
 from tests.test_toolsqaform import UnitTestForm
 
 @pytest.mark.usefixtures("setup")
-class BaseClass(UnitTestForm,UnitTestBooks):
+class BaseClass(UnitTestForm):
 
     UnitTestForm()
-    UnitTestBooks()
