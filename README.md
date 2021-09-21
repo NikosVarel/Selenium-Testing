@@ -2,7 +2,7 @@
 
 **PROJECT UNDER CONSTRUCTION**
 
-This is a **Selenium-Pytest** demo. In this project I apply tests in demo site https://demoqa.com by **ToolsQA.com**, in page **/automation-practice-form**
+This is a **Selenium-Pytest** demo. In this project I apply tests in demo site https://demoqa.com by **ToolsQA.com**, in page **/automation-practice-form**.<br/>
 Tests setup is for **Chrome** (default), **Firefox** and **IE** browsers and the choice is done by terminal. **pytest -v -s --driverName=chrome**.<br/>
 The inputs are static, but are about to be inserted dymamically.<br/>
 The main taget is:
